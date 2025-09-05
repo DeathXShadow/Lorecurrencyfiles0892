@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚔️ Lore Server – Admin Panel</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #f6f7fb; }
+header {
+  display: flex; justify-content: center; align-items: center;
+  padding: 16px; background: #fff; border-bottom: 2px solid #ddd;
+  font-size: 20px; font-weight: bold; color: #b4001a;
+}
+main { padding: 20px; max-width: 800px; margin: auto; }
+.user-card {
+  display: flex; align-items: center; justify-content: space-between;
+  background: #fff; border: 1px solid #ddd; padding: 15px;
+  border-radius: 12px; margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+.user-info { display: flex; align-items: center; gap: 15px; }
+.user-info img {
+  width: 60px; height: 60px; border-radius: 50%;
+  border: 3px solid #b4001a; object-fit: cover;
+}
+.user-info h3 { margin: 0; font-size: 18px; }
+.user-info p { margin: 0; font-size: 14px; color: #555; }
+.controls { display: flex; flex-direction: column; gap: 6px; }
+.controls input {
+  padding: 5px; border-radius: 6px; border: 1px solid #aaa; width: 100px;
+}
+.controls button {
+  background: #b4001a; color: white; border: none; padding: 6px 10px;
+  border-radius: 6px; cursor: pointer; transition: .2s;
+}
+.controls button:hover { background: #e51b23; }
+</style>
+</head>
+<body>
+<header>⚔️ LORE SERVER – ADMIN PANEL</header>
+<main id="userList">Loading users...</main>
+
+<script>
+// Fetch & Render users
+async function loadUsers() {
+  const res = await fetch("http://localhost:3000/users");
+  const users = await res.json();
+  const container = document.getElementById("userList");
+  container.innerHTML = "";
+
+  users.forEach((u, i) => {
+    const card = document.createElement("div");
+    card.className = "user-card";
+    card.innerHTML = `
+      <div class="user-info">
+        <img src="${u.avatar}" alt="${u.name}">
+        <div>
+          <h3>${u.name}</h3>
+          <p>Subscription: <b>${u.subscription}</b></p>
+          <p>Balance: <b>${u.balance}</b> Lore Tokens</p>
+        </div>
+      </div>
+      <div class="controls">
+        <input type="number" value="${u.balance}" id="bal-${i}">
+        <input type="text" value="${u.subscription}" id="sub-${i}">
+        <button onclick="updateUser(${i})">Save</button>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Update a user
+async function updateUser(index) {
+  const balance = document.getElementById(`bal-${index}`).value;
+  const subscription = document.getElementById(`sub-${index}`).value;
+
+  await fetch("http://localhost:3000/updateUser", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ index, balance, subscription })
+  });
+
+  loadUsers();
+}
+
+loadUsers();
+</script>
+</body>
+</html>
