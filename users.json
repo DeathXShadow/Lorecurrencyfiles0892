@@ -1,0 +1,23 @@
+[
+  { "name": "Shadow Shadow", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 5200, "subscription": "Diamond" },
+  { "name": "Aether Blade", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 1200, "subscription": "Gold" },
+  { "name": "Luna Storm", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 300, "subscription": "Iron" },
+  { "name": "Orion Flame", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 8500, "subscription": "Grand" },
+  { "name": "Nova Sky", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 150, "subscription": "None" },
+  { "name": "Zephyr Cloud", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 2000, "subscription": "Iron" },
+  { "name": "Crimson Fang", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 4800, "subscription": "Gold" },
+  { "name": "Echo Mirage", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 725, "subscription": "None" },
+  { "name": "Valkyrie Dawn", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 9500, "subscription": "Diamond" },
+  { "name": "Phoenix Ash", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 6120, "subscription": "Gold" },
+  { "name": "Rogue Ember", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 450, "subscription": "Iron" },
+  { "name": "Nyx Serpent", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 12000, "subscription": "Diamond" },
+  { "name": "Atlas Void", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 7700, "subscription": "Grand" },
+  { "name": "Celeste Ray", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 230, "subscription": "None" },
+  { "name": "Titan Fang", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 9999, "subscription": "Gold" },
+  { "name": "Specter Frost", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 3200, "subscription": "Iron" },
+  { "name": "Aurora Drift", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 540, "subscription": "None" },
+  { "name": "Inferno Blaze", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 8800, "subscription": "Diamond" },
+  { "name": "Lyra Whisper", "avatar": "https://i.postimg.cc/d0jGtvqC/Screenshot-2025-08-16-213959.png", "balance": 1600, "subscription": "Gold" },
+  { "name": "Draco Storm", "avatar": "https://i.postimg.cc/2ShXqkL9/Screenshot-2025-08-23-221114.png", "balance": 70, "subscription": "None" },
+  { "name": "Eclipse Fang", "avatar": "https://i.postimg.cc/kG17qCy9/Gemini-Generated-Image-hxz6yyhxz6yyhxz6.png", "balance": 4450, "subscription": "Iron" }
+]
